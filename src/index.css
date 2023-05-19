@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .bg-transparent{
+  @apply bg-[rgb(43, 103, 119)]
+} */
+
 .bg-primary{
   @apply bg-[#2b6777]
 }

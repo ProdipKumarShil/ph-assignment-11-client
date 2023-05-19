@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ToyCard from './ToyCard';
 
 
 const ToySection = () => {
+
+  const [toys, setToys] = useState([])
+
+  useEffect( () => {
+    fetch('toys.json')
+      .then(res => res.json())
+      .then(data => setToys(data))
+  } , [])
+  
   return (
     <div className='mx-auto max-w-screen-xl'>
       <div className="">
@@ -11,18 +20,9 @@ const ToySection = () => {
       </div>
 
       <div className="grid grid-cols-4 gap-4">
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
-        <ToyCard></ToyCard>
+        {
+          toys.slice(0, 8).map(toy => <ToyCard toy={toy}></ToyCard>)
+        }
       </div>
 
     </div>
