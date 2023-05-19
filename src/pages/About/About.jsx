@@ -1,9 +1,11 @@
+import { Lottie } from 'lottie-react';
 import React from 'react';
+import about from ''
 
 const About = () => {
   return (
     <div>
-      This is about
+      <Lottie />
     </div>
   );
 };
