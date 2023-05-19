@@ -2,7 +2,7 @@
  {
   "name": "Pixar Track Talkers Toy Vehicles",
   "category": "car",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4,
   "quantity": 213,
   "img": "https:\/\/i.ibb.co\/mRHC1n5\/car1.jpg",
@@ -11,7 +11,7 @@
  {
   "name": "Big Time Muscle",
   "category": "car",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4,
   "quantity": 234,
   "img": "https:\/\/i.ibb.co\/K6NjKgc\/car2.jpg",
@@ -20,7 +20,7 @@
  {
   "name": "Driven by Battat – Micro Police SUV",
   "category": "car",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.5,
   "quantity": 345,
   "img": "https:\/\/i.ibb.co\/NVkTwX4\/car3.jpg",
@@ -29,7 +29,7 @@
  {
   "name": "umping Monster Truck",
   "category": "car",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.3,
   "quantity": 645,
   "img": "https:\/\/i.ibb.co\/VxMDmc8\/car4.jpg",
@@ -38,7 +38,7 @@
  {
   "name": "Green Toys Car Carrier",
   "category": "car",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.9,
   "quantity": 235,
   "img": "https:\/\/i.ibb.co\/qncQFGk\/car5.jpg",
@@ -47,7 +47,7 @@
  {
   "name": "Car Launcher with Movement-Activated",
   "category": "car",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.2,
   "quantity": 353,
   "img": "https:\/\/i.ibb.co\/zZvnhj4\/car6.jpg",
@@ -56,7 +56,7 @@
  {
   "name": "Disney and Pixar Cars Toys",
   "category": "car",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.5,
   "quantity": 643,
   "img": "https:\/\/i.ibb.co\/NxkVJdC\/car7.jpg",
@@ -65,7 +65,7 @@
  {
   "name": "Jada Toys Fast & Furious",
   "category": "car",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 234,
   "img": "https:\/\/i.ibb.co\/CvcMpZ4\/car8.jpg",
@@ -74,7 +74,7 @@
  {
   "name": "Fast & Furious 1:24 Lamborghini",
   "category": "car",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.1,
   "quantity": 432,
   "img": "https:\/\/i.ibb.co\/Qp65mBC\/car9.jpg",
@@ -83,7 +83,7 @@
  {
   "name": "Paw Patrol, Marshall’s Fire Engine",
   "category": "car",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 64,
   "img": "https:\/\/i.ibb.co\/bsGRQQh\/car10.jpg",
@@ -92,7 +92,7 @@
  {
   "name": "Lamborghini Huracan Performante Candy Purple",
   "category": "car",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.9,
   "quantity": 743,
   "img": "https:\/\/i.ibb.co\/Pc303k9\/car11.jpg",
@@ -101,7 +101,7 @@
  {
   "name": "Animal Figurine",
   "category": "animal",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 345,
   "img": "https:\/\/i.ibb.co\/0BPRyKq\/animal1.jpg",
@@ -110,7 +110,7 @@
  {
   "name": "Seal Toy Figurine",
   "category": "animal",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 5654,
   "img": "https:\/\/i.ibb.co\/wNJZ4tq\/animal2.jpg",
@@ -119,7 +119,7 @@
  {
   "name": "Baby Orca Whale Toy",
   "category": "animal",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.5,
   "quantity": 675,
   "img": "https:\/\/i.ibb.co\/frB27fp\/animal3.jpg",
@@ -128,7 +128,7 @@
  {
   "name": "Jaguar Toy Figurine",
   "category": "animal",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 822,
   "img": "https:\/\/i.ibb.co\/fXM8jPr\/animal4.jpg",
@@ -137,7 +137,7 @@
  {
   "name": "Beaver",
   "category": "animal",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.8,
   "quantity": 111,
   "img": "https:\/\/i.ibb.co\/DGMPDVj\/animal5.jpg",
@@ -146,7 +146,7 @@
  {
   "name": "Aardvark Toy Figurine",
   "category": "animal",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.3,
   "quantity": 654,
   "img": "https:\/\/i.ibb.co\/tLmtTZv\/animal6.jpg",
@@ -155,7 +155,7 @@
  {
   "name": "Iguana",
   "category": "animal",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.4,
   "quantity": 767,
   "img": "https:\/\/i.ibb.co\/vmzRJsX\/animal7.jpg",
@@ -164,7 +164,7 @@
  {
   "name": "Battat African Elephant Family",
   "category": "animal",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.7,
   "quantity": 889,
   "img": "https:\/\/i.ibb.co\/pxz7SQs\/animal8.jpg",
@@ -173,7 +173,7 @@
  {
   "name": "Scorpion Toy Figurine",
   "category": "animal",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.4,
   "quantity": 800,
   "img": "https:\/\/i.ibb.co\/d4nTtzS\/animal9.jpg",
@@ -182,7 +182,7 @@
  {
   "name": "Dolphin",
   "category": "animal",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.5,
   "quantity": 211,
   "img": "https:\/\/i.ibb.co\/0MCrgFM\/animal10.jpg",
@@ -191,7 +191,7 @@
  {
   "name": "Schleich Dinosaurs",
   "category": "animal",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 377,
   "img": "https:\/\/i.ibb.co\/Rvxnjv4\/animal11.jpg",
@@ -200,7 +200,7 @@
  {
   "name": "Clawdeen Wolf Fashion Doll",
   "category": "doll",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 566,
   "img": "https:\/\/i.ibb.co\/f84rc9T\/doll1.jpg",
@@ -209,7 +209,7 @@
  {
   "name": "Grant Doll with Microphone",
   "category": "doll",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 873,
   "img": "https:\/\/i.ibb.co\/hK6VHwT\/doll2.jpg",
@@ -218,7 +218,7 @@
  {
   "name": "Stein Doll with Headphones",
   "category": "doll",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.3,
   "quantity": 873,
   "img": "https:\/\/i.ibb.co\/9bqFBcs\/doll3.jpg",
@@ -227,7 +227,7 @@
  {
   "name": "Barbie Fashionistas Doll and Scooter",
   "category": "doll",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.7,
   "quantity": 300,
   "img": "https:\/\/i.ibb.co\/pbq9dqd\/doll4.jpg",
@@ -236,7 +236,7 @@
  {
   "name": "WellieWishers Camille Doll",
   "category": "doll",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.9,
   "quantity": 823,
   "img": "https:\/\/i.ibb.co\/5LHHRB3\/doll5.jpg",
@@ -245,7 +245,7 @@
  {
   "name": "Adora Realistic Baby Doll ",
   "category": "doll",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 5,
   "quantity": 324,
   "img": "https:\/\/i.ibb.co\/cYcjDHL\/doll6.jpg",
@@ -254,7 +254,7 @@
  {
   "name": "Barbie Extra Fancy Fashion Doll",
   "category": "doll",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.8,
   "quantity": 342,
   "img": "https:\/\/i.ibb.co\/PxbHmCz\/doll7.jpg",
@@ -263,7 +263,7 @@
  {
   "name": "Burgundy Braids Dressed",
   "category": "doll",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.3,
   "quantity": 654,
   "img": "https:\/\/i.ibb.co\/S6CCYGR\/doll8.jpg",
@@ -272,7 +272,7 @@
  {
   "name": "Barbie Dreamtopia Doll",
   "category": "doll",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.5,
   "quantity": 775,
   "img": "https:\/\/i.ibb.co\/Qkq9PbF\/doll9.jpg",
@@ -281,7 +281,7 @@
  {
   "name": "American Girl Truly Me",
   "category": "doll",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 883,
   "img": "https:\/\/i.ibb.co\/xYTbSvs\/doll10.jpg",
@@ -290,7 +290,7 @@
  {
   "name": "Adora Realistic Baby Doll",
   "category": "doll",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 433,
   "img": "https:\/\/i.ibb.co\/LSKMJhS\/doll11.jpg",
@@ -299,7 +299,7 @@
  {
   "name": "LEGO Technic Monster",
   "category": "lego",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 345,
   "img": "https:\/\/i.ibb.co\/s9dZLWQ\/lego9.jpg",
@@ -308,7 +308,7 @@
  {
   "name": "LEGO Technic Monster Jam Megalodon",
   "category": "lego",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 5654,
   "img": "https:\/\/i.ibb.co\/Q69Vvjy\/lego10.jpg",
@@ -317,7 +317,7 @@
  {
   "name": "LEGO Creator 3 in 1 Space Shuttle Toy ",
   "category": "lego",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.5,
   "quantity": 675,
   "img": "https:\/\/i.ibb.co\/RzH5p6V\/lego11.jpg",
@@ -326,7 +326,7 @@
  {
   "name": "LEGO Speed Champions Lamborghini ",
   "category": "lego",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 822,
   "img": "https:\/\/i.ibb.co\/w4rxLMn\/lego1.jpg",
@@ -335,7 +335,7 @@
  {
   "name": "LEGO BrickHeadz Star Wars",
   "category": "lego",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.8,
   "quantity": 111,
   "img": "https:\/\/i.ibb.co\/vdcXs0M\/lego2.jpg",
@@ -344,7 +344,7 @@
  {
   "name": "LEGO Creator 3 in 1 Magical Unicorn ",
   "category": "lego",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.3,
   "quantity": 654,
   "img": "https:\/\/i.ibb.co\/6DQNMJ6\/lego3.jpg",
@@ -353,7 +353,7 @@
  {
   "name": "LEGO City Police Car Toy",
   "category": "lego",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.4,
   "quantity": 767,
   "img": "https:\/\/i.ibb.co\/LkGVYkh\/lego4.jpg",
@@ -362,7 +362,7 @@
  {
   "name": "LEGO Minecraft The Mushroom",
   "category": "lego",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.7,
   "quantity": 889,
   "img": "https:\/\/i.ibb.co\/WB9qHLG\/lego5.jpg",
@@ -371,7 +371,7 @@
  {
   "name": "LEGO City ATV and Otter",
   "category": "lego",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.4,
   "quantity": 800,
   "img": "https:\/\/i.ibb.co\/QYdn00v\/lego6.jpg",
@@ -380,7 +380,7 @@
  {
   "name": "LEGO Star Wars",
   "category": "lego",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.5,
   "quantity": 211,
   "img": "https:\/\/i.ibb.co\/vHKyP9k\/lego7.jpg",
@@ -389,7 +389,7 @@
  {
   "name": "LEGO DUPLO Classic Brick ",
   "category": "lego",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 377,
   "img": "https:\/\/i.ibb.co\/fk74y94\/lego8.jpg",
@@ -398,7 +398,7 @@
  {
   "name": "The Spider-Verse Cyborg Spider",
   "category": "marvel",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 566,
   "img": "https:\/\/i.ibb.co\/n0RyVB3\/marvel1.jpg",
@@ -407,7 +407,7 @@
  {
   "name": "Potato Head Marvel ",
   "category": "marvel",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.8,
   "quantity": 873,
   "img": "https:\/\/i.ibb.co\/fdpVm38\/marvel2.jpg",
@@ -416,7 +416,7 @@
  {
   "name": "Marvel Studios' Black Panther",
   "category": "marvel",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.3,
   "quantity": 873,
   "img": "https:\/\/i.ibb.co\/sQswH7k\/marvel3.jpg",
@@ -425,7 +425,7 @@
  {
   "name": "Marvel Studios Titan Hero ",
   "category": "marvel",
-  "sub-category": "math",
+  "subCategory": "math",
   "rating": 4.7,
   "quantity": 300,
   "img": "https:\/\/i.ibb.co\/7rPYSkL\/marvel4.jpg",
@@ -434,7 +434,7 @@
  {
   "name": "Marvel Avengers Thor",
   "category": "marvel",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.9,
   "quantity": 823,
   "img": "https:\/\/i.ibb.co\/9nYtT03\/marvel5.jpg",
@@ -443,7 +443,7 @@
  {
   "name": "The Galaxy Vol. 3 Rocket",
   "category": "marvel",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 5,
   "quantity": 324,
   "img": "https:\/\/i.ibb.co\/X3dxKH3\/marvel6.jpg",
@@ -452,7 +452,7 @@
  {
   "name": "Superman Action Figure",
   "category": "marvel",
-  "sub-category": "language",
+  "subCategory": "language",
   "rating": 4.8,
   "quantity": 342,
   "img": "https:\/\/i.ibb.co\/XtKf6dc\/marvel7.jpg",
@@ -461,7 +461,7 @@
  {
   "name": "Marvel Hulk Hero",
   "category": "marvel",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.3,
   "quantity": 654,
   "img": "https:\/\/i.ibb.co\/Q91N8b0\/marvel8.jpg",
@@ -470,7 +470,7 @@
  {
   "name": "Classic Captain America Action",
   "category": "marvel",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.5,
   "quantity": 775,
   "img": "https:\/\/i.ibb.co\/KW8SmVr\/marvel9.jpg",
@@ -479,7 +479,7 @@
  {
   "name": "Toys DC Black ADAM ",
   "category": "marvel",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 883,
   "img": "https:\/\/i.ibb.co\/BnZ5bWT\/marvel10.jpg",
@@ -488,7 +488,7 @@
  {
   "name": "Avengers Marvel Black Panther",
   "category": "marvel",
-  "sub-category": "science",
+  "subCategory": "science",
   "rating": 4.8,
   "quantity": 433,
   "img": "https:\/\/i.ibb.co\/Pt3g0Tf\/marvel11.jpg",
