@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
-    <div className='mx-auto max-w-screen-xl grid grid-cols-2 items-center'>
+    <div className='mx-auto max-w-screen-xl grid grid-cols-1  md:grid-cols-2 items-center'>
       <Lottie animationData={loginAnim}/>
       <form className='mx-4'>
         <h1 className='text-2xl font-semibold mb-4 '>Please Register</h1>
