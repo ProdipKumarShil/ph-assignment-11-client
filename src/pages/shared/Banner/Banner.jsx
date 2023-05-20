@@ -5,32 +5,13 @@ import img3 from '../../../assets/banner/all4.jpg'
 import img4 from '../../../assets/banner/all5.jpg'
 import img5 from '../../../assets/banner/all6.jpg'
 import sale1 from '../../../assets/seals/seals0.png'
+import Category from '../Category/Category'
 
 const Banner = () => {
   return (
     <div className='mx-auto max-w-screen-xl grid grid-cols-12 gap-3'>
       {/* categories */}
-      <div className="col-span-3 mt-2">
-        <h4 className='text-xl font-semibold text-bg bg-primary py-2 px-3 mb-2'>Toys Category</h4>
-        <ul className="w-full   font-semibold text-xl text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
-          <Link>
-            <li className="w-full px-4 py-4 border-b border-gray-200 rounded-t-lg dark:border-gray-600">Car </li>
-          </Link>
-          <Link>
-            <li className="w-full px-4 py-4 border-b border-gray-200 dark:border-gray-600">Animal </li>
-          </Link>
-          <Link>
-            <li className="w-full px-4 py-4 border-b border-gray-200 dark:border-gray-600">Dolls</li>
-          </Link>
-          <Link>
-            <li className="w-full px-4 py-4 border-b border-gray-200 dark:border-gray-600">Lego</li>
-          </Link>
-          <Link>
-            <li className="w-full px-4 py-4 rounded-b-lg">Marvel</li>
-          </Link>
-        </ul>
-
-      </div>
+      <Category></Category>
 
       {/* Carousel  */}
       <div id="default-carousel" className="mt-2 relative w-full col-span-12 md:col-span-6" data-carousel="slide">

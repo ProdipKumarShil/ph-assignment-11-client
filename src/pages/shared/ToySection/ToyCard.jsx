@@ -3,7 +3,7 @@ import sale1 from '../../../assets/seals/seals0.png'
 import { Link } from 'react-router-dom';
 
 const ToyCard = ({ toy }) => {
-  const { img, name, price, rating } = toy
+  const { _id, img, name, price, rating } = toy
   return (
     <div className=" mt-2  relative ">
       <Link to='#' className="block p-4 h-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700  ">
@@ -22,7 +22,7 @@ const ToyCard = ({ toy }) => {
       </Link>
       <div className="w-full h-full absolute duration-100 rounded-lg inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-50">
         <div className="w-full h-full relative">
-          <Link className="text-bg absolute top-1/2 right-[120px] bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Details</Link>
+          <Link to={`/singleToy/${_id}`} className="text-bg absolute top-1/2 right-[120px] bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Details</Link>
           <Link className="text-bg absolute top-[70%] right-[105px] bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Add to cart</Link>
         </div>
 
