@@ -63,7 +63,7 @@ const Navbar = () => {
               <li>
                 <NavLink to='/register' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Register</NavLink>
               </li>
-              <li>
+              <li >
                 <button onClick={handleLogOut}>logOut</button>
               </li>
 
