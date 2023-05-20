@@ -2,6 +2,7 @@ import React from 'react';
 import Lottie from "lottie-react";
 import loginAnim from '../../assets/lottie/Login.json'
 import { Link } from 'react-router-dom';
+import google from '../../assets/logo/google.png'
 
 const Login = () => {
   return (
@@ -18,7 +19,8 @@ const Login = () => {
           <label for="floating_password" className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
         </div>
         <p className="text-sm mb-4">Not have an Account? <Link className='hover:underline' to='/register'>Register</Link></p>
-        <input type="submit" value="Submit" class="text-bg bg-primary focus:outline-none cursor-pointer w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" />
+        <input type="submit" value="Login" class="text-bg bg-primary focus:outline-none cursor-pointer w-full text-xl font-semibold px-5 py-2.5 text-center " />
+        <button type="submit" class="text-bg bg-gray-200 mt-2 focus:outline-none cursor-pointer w-full px-5 py-2.5 text-center " ><img className='h-8 mx-auto' src={google} alt="" /></button>
       </form>
     </div>
   );
