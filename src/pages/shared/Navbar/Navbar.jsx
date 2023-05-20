@@ -11,6 +11,7 @@ const Navbar = () => {
       .then(result => console.log('logout success fully'))
       .catch(error => console.log(error))
   }
+  console.log(user)
   return (
     <div>
 
@@ -33,8 +34,10 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <Link className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
-            <Link className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><CgProfile /></Link>
             
+            {
+              user?.photoURL ? <img className='w-16 rounded-full' src={user.photoURL}/> : <Link className={user ? 'text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4' : 'hidden'}><CgProfile /></Link> 
+            }
           </div>
         </div>
       </nav>
@@ -57,13 +60,13 @@ const Navbar = () => {
               <li>
                 <NavLink to='/my-toys' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>My Toys</NavLink>
               </li>
-              <li>
+              <li className={user ? 'hidden' : ''}>
                 <NavLink to='/login' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Login</NavLink>
               </li>
-              <li>
+              <li className={user ? 'hidden' : ''}>
                 <NavLink to='/register' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Register</NavLink>
-              </li>
-              <li >
+              </li >
+              <li className={!user && 'hidden'}>
                 <button onClick={handleLogOut}>logOut</button>
               </li>
 
