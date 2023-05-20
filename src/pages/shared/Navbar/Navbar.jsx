@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../../assets/logo/logo.png'
 import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CgProfile } from "react-icons/cg";
+import { AuthContext } from '../../../provider/AuthProvider';
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext)
+  const handleLogOut = () => {
+    logOut()
+      .then(result => console.log('logout success fully'))
+      .catch(error => console.log(error))
+  }
   return (
     <div>
 
@@ -56,7 +63,9 @@ const Navbar = () => {
               <li>
                 <NavLink to='/register' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Register</NavLink>
               </li>
-
+              <li>
+                <button onClick={handleLogOut}>logOut</button>
+              </li>
 
             </ul>
           </div>
