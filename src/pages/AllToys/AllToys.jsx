@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MyToys = () => {
+const AllToys = () => {
   return (
     <div className='mx-auto max-w-screen-xl'>
-      <h2 className='text-2xl font-medium my-4 ml-4'>My Toys</h2>
+      <h2 className='text-2xl font-medium my-4 ml-4'>All Toys</h2>
 
       <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
@@ -21,13 +21,6 @@ const MyToys = () => {
               <th scope="col" class="px-6 py-3">
                 Available Quantity
               </th>
-              <th scope="col" class="px-6 py-3">
-                Actions
-              </th>
-
-              {/* <th scope="col" class="px-6 py-3">
-                <span class="sr-only">Edit</span>
-              </th> */}
             </tr>
           </thead>
           <tbody>
@@ -44,10 +37,6 @@ const MyToys = () => {
               <td class="px-6 py-4">
                 $2999
               </td>
-              <td class="px-6 py-4 text-left">
-                <a href="#" class="font-medium mr-4 text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
-              </td>
             </tr>
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -61,10 +50,6 @@ const MyToys = () => {
               </td>
               <td class="px-6 py-4">
                 $1999
-              </td>
-              <td class="px-6 py-4 text-left">
-                <a href="#" class="font-medium mr-4 text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
               </td>
             </tr>
             <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -80,10 +65,6 @@ const MyToys = () => {
               <td class="px-6 py-4">
                 $99
               </td>
-              <td class="px-6 py-4 text-left">
-                <a href="#" class="font-medium mr-4 text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -93,4 +74,4 @@ const MyToys = () => {
   );
 };
 
-export default MyToys;
+export default AllToys;

@@ -60,6 +60,12 @@ const Navbar = () => {
               <li>
                 <NavLink to='/my-toys' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>My Toys</NavLink>
               </li>
+              <li>
+                <NavLink to='/add-toys' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Add a Toys</NavLink>
+              </li>
+              <li>
+                <NavLink to='/all-toys' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>All Toys</NavLink>
+              </li>
               <li className={user ? 'hidden' : ''}>
                 <NavLink to='/login' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Login</NavLink>
               </li>

@@ -11,6 +11,8 @@ import Blog from '../pages/Blog/Blog';
 import SingleToy from '../pages/shared/SingleToy/SingleToy';
 import Category from '../layout/Category';
 import CarCategory from '../pages/shared/ToyCategory/CarCategory';
+import AddAToys from '../pages/AddAToys/AddAToys';
+import AllToys from '../pages/AllToys/AllToys';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '/add-toys',
+        element: <AddAToys></AddAToys>
+      },
+      {
+        path: '/all-toys',
+        element: <AllToys></AllToys>
       },
       {
         path: '/singleToy/:id',
