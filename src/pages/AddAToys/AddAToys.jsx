@@ -34,7 +34,7 @@ const AddAToys = () => {
 
     console.log(seller_toy)
     
-    fetch('http://localhost:5000/sellerToys', {
+    fetch('https://candyland-toys-server.vercel.app/sellerToys', {
       method: "POST",
       headers: {
         'content-type': 'application/json'

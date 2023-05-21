@@ -6,7 +6,7 @@ const AllToys = () => {
   const [toys, setToys] = useState([])
 
   useEffect( () => {
-    fetch('http://localhost:5000/getSellerToys')
+    fetch('https://candyland-toys-server.vercel.app/getSellerToys')
       .then(res => res.json())
       .then(data => setToys(data))
   } , [])

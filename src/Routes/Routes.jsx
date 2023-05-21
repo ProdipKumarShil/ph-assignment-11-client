@@ -53,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/singleToy/:id',
-        loader: ({params}) => fetch(`http://localhost:5000/allToys/singleToy/${params.id}`),
+        loader: ({ params }) => fetch(`https://candyland-toys-server.vercel.app/allToys/singleToy/${params.id}`),
         element: <SingleToy></SingleToy>
       }
     ],
