@@ -1,18 +1,21 @@
 import React, { useContext } from 'react';
 import Lottie from "lottie-react";
 import loginAnim from '../../assets/lottie/Login.json'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import google from '../../assets/logo/google.png'
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Register = () => {
   const { googleSignUp, setUser, emailSignUp, updateUser } = useContext(AuthContext)
+  const navigate = useNavigate()
   
   const handleGoogleSignUp = () => {
     googleSignUp()
       .then(result =>{
+        
         const user = result.user
         setUser(user)
+        navigate('/')
       } )
       .catch(error => {
         console.log(error)
@@ -34,6 +37,7 @@ const Register = () => {
         updateUser(userInfo)
         const user = result.user
         setUser(user)
+        navigate('/')
       })
       .catch(error => {
         console.log(error)
