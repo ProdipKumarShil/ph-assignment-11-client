@@ -13,6 +13,7 @@ import Category from '../layout/Category';
 import CarCategory from '../pages/shared/ToyCategory/CarCategory';
 import AddAToys from '../pages/AddAToys/AddAToys';
 import AllToys from '../pages/AllToys/AllToys';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/my-toys',
-        element: <MyToys></MyToys>  // this will be private route
+        element:  <PrivateRoute><MyToys></MyToys></PrivateRoute>  // this will be private route
       },
       {
         path: '/about-us',
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/add-toys',
-        element: <AddAToys></AddAToys>
+        element: <PrivateRoute><AddAToys></AddAToys></PrivateRoute>
       },
       {
         path: '/all-toys',
@@ -54,7 +55,7 @@ const router = createBrowserRouter([
       {
         path: '/singleToy/:id',
         loader: ({ params }) => fetch(`https://candyland-toys-server.vercel.app/allToys/singleToy/${params.id}`),
-        element: <SingleToy></SingleToy>
+        element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute> 
       }
     ],
     errorElement: <ErrorPage></ErrorPage>
