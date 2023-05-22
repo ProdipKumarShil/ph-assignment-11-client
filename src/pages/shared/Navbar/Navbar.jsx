@@ -48,7 +48,7 @@ const Navbar = () => {
       <nav className="bg-primary relative text-[#c8d8e4] mx-auto max-w-screen-xl rounded-t-3xl">
         <div className="max-w-screen-xl px-4 py-3 mx-auto">
           <div className="flex items-center">
-            <div onClick={() => setMenu(!menu)} className="m">
+            <div onClick={() => setMenu(!menu)} className="md:hidden">
               <HiOutlineMenuAlt1 className={menu ? 'hidden' : 'text-2xl'} />
               <RxCross2 className={menu ? 'text-2xl' : 'hidden'} />
             </div>
