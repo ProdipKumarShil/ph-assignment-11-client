@@ -55,7 +55,7 @@ const MyToyTable = ({myToy}) => {
     console.log(price, quantity, description)
     const updatedToys = {price, quantity, description}
     
-    fetch(`http://localhost:5000/getSellerToys/${_id}`, {
+    fetch(`https://candyland-toys-server.vercel.app/getSellerToys/${_id}`, {
       method: "PUT",
       headers: {
         'content-type': 'application/json'

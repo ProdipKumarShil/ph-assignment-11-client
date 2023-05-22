@@ -5,15 +5,13 @@ import { AuthContext } from '../../provider/AuthProvider';
 const MyToys = () => {
 
   const {user} = useContext(AuthContext)
-  console.log('email',user.email)
-  console.log('link', `http://localhost:5000/getSellerToysByEmail?email=${user.email}`)
   const [myToys, setMyToys] = useState([])
 
   useEffect( () => {
     fetch(`https://candyland-toys-server.vercel.app/getSellerToysByEmail?email=${user.email}`)
       .then(res => res.json())
       .then(data => setMyToys(data))
-  } , [user?.email])
+  } , [])
   if(!user?.email){
     return <h1>Loading</h1>
   }
