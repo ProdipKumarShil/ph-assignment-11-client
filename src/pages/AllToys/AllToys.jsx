@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import ToyTable from '../shared/ToyTable/ToyTable';
+import Loader from '../shared/Loader/Loader';
 
 const AllToys = () => {
 
-  const [toys, setToys] = useState([])
+  const [toys, setToys] = useState(null)
 
   useEffect( () => {
     fetch('https://candyland-toys-server.vercel.app/getSellerToys')
       .then(res => res.json())
       .then(data => setToys(data))
   } , [])
+
+  if(!toys){
+    return <Loader></Loader>
+  }
   
   return (
     <div className='mx-auto max-w-screen-xl'>
