@@ -1,19 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react';
 import MyToyTable from './MyToyTable';
 import { AuthContext } from '../../provider/AuthProvider';
+import Loader from '../shared/Loader/Loader';
 
 const MyToys = () => {
 
   const {user} = useContext(AuthContext)
-  const [myToys, setMyToys] = useState([])
+  const [myToys, setMyToys] = useState(null)
+  console.log(myToys)
 
   useEffect( () => {
     fetch(`https://candyland-toys-server.vercel.app/getSellerToysByEmail?email=${user.email}`)
       .then(res => res.json())
       .then(data => setMyToys(data))
   } , [])
-  if(!user?.email){
-    return <h1>Loading</h1>
+  if(!myToys){
+    return <Loader></Loader>
   }
 
   
