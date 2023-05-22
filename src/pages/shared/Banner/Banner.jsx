@@ -14,7 +14,7 @@ const Banner = () => {
       <Category></Category>
 
       {/* Carousel  */}
-      <div id="default-carousel" className="mt-2 relative w-full col-span-12 md:col-span-6" data-carousel="slide">
+      <div id="default-carousel" className="mt-2 px-2 relative w-full col-span-12 md:col-span-6" data-carousel="slide">
 
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
 
@@ -62,7 +62,7 @@ const Banner = () => {
       </div>
 
       {/* flash sale */}
-      <div className="col-span-3 mt-2 relative">
+      <div className="p-4 col-span-12 md:col-span-3 mt-2 relative">
         <h4 className='text-xl font-semibold text-bg bg-primary py-2 px-3 mb-2'>Flash Hour</h4>
         <Link to='#' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center">
           <img src={sale1} className='h-48 text-center mx-auto' alt="flash sale" />

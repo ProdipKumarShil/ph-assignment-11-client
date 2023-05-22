@@ -15,7 +15,7 @@ const ToySection = () => {
   } , [])
   
   return (
-    <div className='mx-auto max-w-screen-xl'>
+    <div className='mx-auto px-2 max-w-screen-xl'>
       <div className="">
         <h4 className='text-xl font-semibold text-bg bg-primary py-2 px-3 my-2'>Shop By Category</h4>
       </div>

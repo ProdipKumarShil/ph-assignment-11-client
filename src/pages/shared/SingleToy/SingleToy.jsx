@@ -7,7 +7,7 @@ const SingleToy = () => {
   return (
     <div className="grid grid-cols-12 mx-auto max-w-screen-xl">
       <Category></Category>
-      <div className="flex mt-4 ml-4 mr-4 col-span-9 flex-col items-center bg-white border  border-gray-200 rounded-lg shadow md:flex-row  ">
+      <div className="flex w-full mt-4 ml-4 mr-4 col-span-9 flex-col items-center bg-white border  border-gray-200 rounded-lg shadow md:flex-row  ">
         <img className="object-cover  rounded-t-lg h-96 md:h-auto w-72 md:rounded-none md:rounded-l-lg p-4" src={img} alt={name} />
         <div className="flex flex-col justify-between p-4 leading-normal">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>

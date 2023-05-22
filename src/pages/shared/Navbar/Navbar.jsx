@@ -17,14 +17,14 @@ const Navbar = () => {
   console.log(menu)
   
   return (
-    <div>
+    <div className='px-2'>
 
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-          <Link to='/' className="flex items-center">
+          <Link to='/' className="flex mx-auto mb-4 md:mb-0 items-center">
             <img src={logo} className="h-32 mr-3" alt="Logo" />
           </Link>
-          <div className="grow px-12">
+          <div className="grow mx-auto mb-4 md:mb-0 px-12">
             <div>
               <label htmlFor="default-search" className="mb-2  font-medium text-gray-900 sr-only dark:text-white">Search</label>
               <div className="relative">
@@ -36,7 +36,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex mx-auto  items-center">
             <Link className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
 
             {
@@ -54,15 +54,15 @@ const Navbar = () => {
             </div>
 
             {/* for hambar bug menu */}
-            <ul className={menu ? ' md:hidden bg-white p-8 left-8 rounded-lg shadow-lg absolute ml-4 mt-0 mr-6 py-4 space-x-8 font-bold' : 'hidden md:hidden  ml-4 mt-0 mr-6 py-4 space-x-8 font-bold'}>
+            <ul className={menu ? ' md:hidden text-black bg-white p-8 z-40 left-8 rounded-lg shadow-lg absolute ml-4 mt-0 mr-6 py-4 space-x-8 font-bold' : 'hidden md:hidden  ml-4 mt-0 mr-6 py-4 space-x-8 font-bold'}>
               {/* <li>
                 <Link href="/" className="bg-bg p-2   text-black hover:underline" aria-current="page">Home</Link>
               </li> */}
               <li className='text-xl'>
-                <NavLink to='/' className={({ isActive }) => isActive ? 'bg-bg py-2  text-black hover:underline' : 'hover:underline'}>Home</NavLink>
+                <NavLink to='/' className={({ isActive }) => isActive ? ' py-2 mb-4 text-black hover:underline' : 'hover:underline'}>Home</NavLink>
               </li>
               <li className='mb-3'>
-                <NavLink to='/blog' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Blog</NavLink>
+                <NavLink to='/blog' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline mt-4'}>Blog</NavLink>
               </li>
               <li className='mb-3'>
                 <NavLink to='/about-us' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>About Us</NavLink>

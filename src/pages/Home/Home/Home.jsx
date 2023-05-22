@@ -4,6 +4,7 @@ import ToySection from '../../shared/ToySection/ToySection';
 import Service from '../../shared/Service/Service';
 import ReactTab from '../../shared/Tab/ReactTab';
 import Gallery from '../../shared/Gallery/Gallery';
+import NewsSletter from '../../shared/NewsSletter/NewsSletter';
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
       <Banner></Banner>
       <Gallery></Gallery>
       <ToySection></ToySection>
-      <Service></Service>
+      {/* <Service></Service> */}
+      <NewsSletter></NewsSletter>
       <ReactTab></ReactTab>
     </div>
   );

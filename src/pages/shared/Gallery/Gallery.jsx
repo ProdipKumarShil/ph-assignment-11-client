@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gallery = () => {
   return (
-    <div className='mx-auto max-w-screen-xl'>
+    <div className='mx-auto p-2 max-w-screen-xl'>
 
       <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <div className="flex justify-between flex-wrap">

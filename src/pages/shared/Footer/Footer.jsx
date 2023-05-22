@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center">
               <img src={logo} className="w-40 mr-3" alt="logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Candy Land Bunny</span>
+              <span className="self-center md:text-2xl font-semibold whitespace-nowrap dark:text-white">Candy Land Bunny</span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
