@@ -2,17 +2,22 @@ import React, { useEffect, useState } from 'react';
 import ToyCard from './ToyCard';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Loader from '../Loader/Loader';
 
 
 const ToySection = () => {
 
-  const [toys, setToys] = useState([])
+  const [toys, setToys] = useState(null)
 
   useEffect( () => {
     fetch('https://candyland-toys-server.vercel.app/allToys')
       .then(res => res.json())
       .then(data => setToys(data))
   } , [])
+
+  if (!toys) {
+    return <Loader></Loader>
+  }
   
   return (
     <div className='mx-auto px-2 max-w-screen-xl'>
