@@ -4,9 +4,9 @@ const Blog = () => {
   return (
     <div className='mx-auto max-w-screen-xl p-2'>
 
-      <div class="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is an access token and refresh token? How do they work and where should we store them on the client-side?</h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">An access token and a refresh token are commonly used in authentication systems. Here's a concise explanation of what they are, how they work, and where they should be stored on the client-side:
+      <div className="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is an access token and refresh token? How do they work and where should we store them on the client-side?</h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">An access token and a refresh token are commonly used in authentication systems. Here's a concise explanation of what they are, how they work, and where they should be stored on the client-side:
 
           Access Token: An access token is a credential that grants a client such as a user's application or a server permission to access protected resources on behalf of the user. It is typically issued by an authorization server after the user successfully authenticates. The access token contains information about the user's identity and permissions.
 
@@ -14,9 +14,9 @@ const Blog = () => {
 
           Working together: When a client wants to access a protected resource, it includes the access token in the request. The server verifies the token's authenticity and permissions to allow or deny access. If the access token has expired, the client can use the refresh token to obtain a new access token without involving the user in the authentication process again.</p>
       </div>
-      <div class="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Compare SQL and NoSQL databases?</h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">SQL (Structured Query Language) and NoSQL (Not Only SQL) are two broad categories of database management systems (DBMS) that differ in data storage models, query languages, scalability, and use cases. Here's a concise comparison:
+      <div className="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Compare SQL and NoSQL databases?</h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">SQL (Structured Query Language) and NoSQL (Not Only SQL) are two broad categories of database management systems (DBMS) that differ in data storage models, query languages, scalability, and use cases. Here's a concise comparison:
 
           SQL Databases:
 
@@ -34,9 +34,9 @@ const Blog = () => {
           Use Cases: NoSQL databases are well-suited for scenarios that require scalability, flexibility, and handling diverse and unstructured data, such as real-time analytics, content management systems, IoT data storage, and social networks.
           It's important to note that this is a general comparison, and there are various specific implementations and variations within both SQL and NoSQL databases. The choice between them depends on factors such as the nature of the data, scalability requirements, development flexibility, and the specific needs of the application.</p>
       </div>
-      <div class="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is express js? What is Nest JS?</h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">Express.js and Nest.js are both web application frameworks for building server-side applications in JavaScript/TypeScript. Here's a concise explanation of each:
+      <div className="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is express js? What is Nest JS?</h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">Express.js and Nest.js are both web application frameworks for building server-side applications in JavaScript/TypeScript. Here's a concise explanation of each:
 
           Express.js:
 
@@ -52,9 +52,9 @@ const Blog = () => {
           It includes built-in support for features like routing, request handling, dependency injection, middleware, and database integration.
 </p>
       </div>
-      <div class="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is MongoDB aggregate and how does it work?</h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">MongoDB's aggregate is a powerful aggregation framework that allows you to perform advanced data processing and analysis operations on the documents stored in a MongoDB collection. It enables you to perform complex transformations, aggregations, and computations on the data.
+      <div className="block mb-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">What is MongoDB aggregate and how does it work?</h5>
+        <p className="font-normal text-gray-700 dark:text-gray-400">MongoDB's aggregate is a powerful aggregation framework that allows you to perform advanced data processing and analysis operations on the documents stored in a MongoDB collection. It enables you to perform complex transformations, aggregations, and computations on the data.
 
           The aggregate method takes an array of stages as input, where each stage represents a specific operation or transformation to be applied to the documents. Here's a concise overview of how the aggregate framework works:
 

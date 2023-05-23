@@ -77,8 +77,8 @@ const AddAToys = () => {
         </div>
 
         <div className="">
-          <label for="underline_select" class="sr-only">Underline select</label>
-          <select id="underline_select" name='sub_category' class="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer" >
+          <label htmlFor="underline_select" className="sr-only">Underline select</label>
+          <select id="underline_select" name='sub_category' className="block py-2.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer" >
             <option selected>Sub Category</option>
             <option value="math">Math</option>
             <option value="language">Language</option>

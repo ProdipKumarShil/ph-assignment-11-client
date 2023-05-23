@@ -82,7 +82,7 @@ const Navbar = () => {
               <li className={user ? 'hidden' : ' mb-3'}>
                 <NavLink to='/register' className={({ isActive }) => isActive ? 'bg-bg py-2 px-4 text-black hover:underline' : 'hover:underline'}>Register</NavLink>
               </li >
-              <li className={!user && 'hidden'}>
+              <li className={user ? '' : 'hidden'}>
                 <button onClick={handleLogOut}>logOut</button>
               </li>
 
