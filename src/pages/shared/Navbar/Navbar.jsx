@@ -6,6 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { AuthContext } from '../../../provider/AuthProvider';
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import SearchBar from '../SearchBar/SearchBar';
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext)
   const [menu, setMenu] = useState(false)
@@ -24,18 +25,7 @@ const Navbar = () => {
           <Link to='/' className="flex mx-auto mb-4 md:mb-0 items-center">
             <img src={logo} className="h-32 mr-3" alt="Logo" />
           </Link>
-          <div className="grow mx-auto mb-4 md:mb-0 px-12">
-            <div>
-              <label htmlFor="default-search" className="mb-2  font-medium text-gray-900 sr-only dark:text-white">Search</label>
-              <div className="relative">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" className="w-6 h-6 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                </div>
-                <input type="search" id="default-search" className="block w-full p-5  pl-10  text-gray-900 border border-gray-300 rounded-full bg-gray-50 " placeholder="Search CandyLand Toys...." />
-                <button type="submit" className="text-bg absolute right-3 bottom-2.5 bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Search</button>
-              </div>
-            </div>
-          </div>
+          <SearchBar />
           <div className="flex mx-auto  items-center">
             <Link className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
 

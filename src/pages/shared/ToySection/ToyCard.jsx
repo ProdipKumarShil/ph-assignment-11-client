@@ -7,7 +7,7 @@ const ToyCard = ({ toy }) => {
   const { _id, img, name, price, rating } = toy
   return (
     <div className=" mt-2  relative ">
-      <Link to='#' className="block p-4 h-full max-w-sm  bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700  ">
+      <Link to='#' className="block p-4 h-full  bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700  ">
         <img src={img} className='h-48 text-center mx-auto' alt="flash sale" />
         <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
 
