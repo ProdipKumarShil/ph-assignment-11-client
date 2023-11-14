@@ -10,10 +10,10 @@ import About from '../pages/About/About';
 import Blog from '../pages/Blog/Blog';
 import SingleToy from '../pages/shared/SingleToy/SingleToy';
 import Category from '../layout/Category';
-import CarCategory from '../pages/shared/ToyCategory/CarCategory';
 import AddAToys from '../pages/AddAToys/AddAToys';
 import AllToys from '../pages/AllToys/AllToys';
 import PrivateRoute from './PrivateRoute';
+import ToyCategory from '../pages/shared/ToyCategory/ToyCategory';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +56,11 @@ const router = createBrowserRouter([
         path: '/singleToy/:id',
         loader: ({ params }) => fetch(`https://candyland-toys-server.vercel.app/allToys/singleToy/${params.id}`),
         element: <PrivateRoute><SingleToy></SingleToy></PrivateRoute> 
+      },
+      {
+        path: '/allToys/categories/:category',
+        loader: ({params}) => fetch(`http://localhost:5000/allToys/categories/${params.category}`),
+        element: <ToyCategory />
       }
     ],
     errorElement: <ErrorPage></ErrorPage>

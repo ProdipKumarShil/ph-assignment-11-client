@@ -63,7 +63,7 @@ const SearchBar = () => {
 
         <ul className="absolute top-[66px] z-10 w-[90%] bg-gray-50 max-h-[200px] overflow-y-scroll rounded-xl">
           {
-            result.map(product => <li className="  text-lg text-gray-600 font-bold border rounded-xl  hover:bg-gray-200"><Link to={`/singleToy/${product._id}`} className="block p-3">{product.name}</Link></li>)
+            result.map(product => <li key={product._id} className="  text-lg text-gray-600 font-bold border rounded-xl  hover:bg-gray-200"><Link to={`/singleToy/${product._id}`} className="block p-3">{product.name}</Link></li>)
           }
         </ul>
       </div>
