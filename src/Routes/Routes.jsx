@@ -9,11 +9,11 @@ import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import About from '../pages/About/About';
 import Blog from '../pages/Blog/Blog';
 import SingleToy from '../pages/shared/SingleToy/SingleToy';
-import Category from '../layout/Category';
 import AddAToys from '../pages/AddAToys/AddAToys';
 import AllToys from '../pages/AllToys/AllToys';
 import PrivateRoute from './PrivateRoute';
 import ToyCategory from '../pages/shared/ToyCategory/ToyCategory';
+import Toys from '../layout/Toys';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +61,11 @@ const router = createBrowserRouter([
         path: '/allToys/categories/:category',
         loader: ({params}) => fetch(`http://localhost:5000/allToys/categories/${params.category}`),
         element: <ToyCategory />
+      },
+      {
+        path: '/allToys',
+        loader: () => fetch('http://localhost:5000/allToys'),
+        element: <Toys />,
       }
     ],
     errorElement: <ErrorPage></ErrorPage>
