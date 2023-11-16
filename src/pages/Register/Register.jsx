@@ -4,6 +4,7 @@ import loginAnim from '../../assets/lottie/Login.json'
 import { Link, useNavigate } from 'react-router-dom';
 import google from '../../assets/logo/google.png'
 import { AuthContext } from '../../provider/AuthProvider';
+import { data } from 'autoprefixer';
 
 const Register = () => {
   const { googleSignUp, setUser, emailSignUp, updateUser } = useContext(AuthContext)
@@ -38,6 +39,16 @@ const Register = () => {
         const user = result.user
         setUser(user)
         navigate('/')
+
+        fetch('https://candyland-toys-server.vercel.app/addUser',{
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({
+            name, email, password, photoURL
+          })
+        })
+          .then(res => res.json())
+          .then((data) => console.log(data))
       })
       .catch(error => {
         console.log(error)

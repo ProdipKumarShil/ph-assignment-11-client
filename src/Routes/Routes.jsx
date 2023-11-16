@@ -14,6 +14,7 @@ import AllToys from '../pages/AllToys/AllToys';
 import PrivateRoute from './PrivateRoute';
 import ToyCategory from '../pages/shared/ToyCategory/ToyCategory';
 import Toys from '../layout/Toys';
+import Cart from '../pages/Cart/Cart';
 
 const router = createBrowserRouter([
   {
@@ -59,13 +60,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/allToys/categories/:category',
-        loader: ({params}) => fetch(`http://localhost:5000/allToys/categories/${params.category}`),
+        loader: ({params}) => fetch(`https://candyland-toys-server.vercel.app/allToys/categories/${params.category}`),
         element: <ToyCategory />
       },
       {
         path: '/allToys',
-        loader: () => fetch('http://localhost:5000/allToys'),
+        loader: () => fetch('https://candyland-toys-server.vercel.app/allToys'),
         element: <Toys />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />
       }
     ],
     errorElement: <ErrorPage></ErrorPage>

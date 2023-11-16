@@ -27,7 +27,7 @@ const Navbar = () => {
           </Link>
           <SearchBar />
           <div className="flex mx-auto  items-center">
-            <Link className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
+            <Link to='/cart' className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
 
             {
               user?.photoURL ? <img className='w-16 rounded-full' src={user.photoURL} /> : <Link className={user ? 'text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4' : 'hidden'}><CgProfile /></Link>

@@ -1,9 +1,40 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import sale1 from '../../../assets/seals/seals0.png'
 import { Link } from 'react-router-dom';
 import UserRating from '../Rating/Rating';
+import { AuthContext } from '../../../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const ToyCard = ({ toy }) => {
+  const {user} = useContext(AuthContext)
+  // console.log(user)
+
+  const addToCart = (userID, itemID) => {
+    fetch('http://localhost:5000/addCart', {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        userID, itemID, quantity: 1
+      })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if(data.success){
+          Swal.fire({
+            title: "Good job!",
+            text: "Item added to cart!",
+            icon: "success"
+          });
+        } else {
+          Swal.fire({
+            title: "Opps...!",
+            text: "Failed to added cart!",
+            icon: "error"
+          });
+        }
+      })
+  }
+  
   const { _id, img, name, price, rating } = toy
   return (
     <div className=" mt-2  relative ">
@@ -19,7 +50,7 @@ const ToyCard = ({ toy }) => {
       <div className="w-full h-full absolute duration-100 rounded-lg inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-50">
         <div className="w-full h-full relative">
           <Link to={`/singleToy/${_id}`} className="text-bg absolute center-div bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Details</Link>
-          <Link className="text-bg absolute center-div mt-14 bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Add to cart</Link>
+          <button onClick={() => addToCart(user.uid, _id)} className="text-bg absolute center-div mt-14 bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Add to cart</button>
         </div>
       </div>
 
