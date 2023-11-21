@@ -7,15 +7,14 @@ import Swal from 'sweetalert2';
 
 const ToyCard = ({ toy }) => {
   const {user} = useContext(AuthContext)
-  // console.log(user)
+  const cartItem = {id: toy._id, name: toy.name, rating: toy.rating, img:toy.img, price: toy.price, email: user.email, category: toy.category, quantity: 1}
+  // console.log(cartItem)
 
-  const addToCart = (userID, itemID) => {
-    fetch('http://localhost:5000/addCart', {
+  const addToCart = () => {
+    fetch('https://candyland-toys-server.vercel.app/addCart', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({
-        userID, itemID, quantity: 1
-      })
+      body: JSON.stringify(cartItem)
     })
       .then(res => res.json())
       .then(data => {
@@ -50,7 +49,7 @@ const ToyCard = ({ toy }) => {
       <div className="w-full h-full absolute duration-100 rounded-lg inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-50">
         <div className="w-full h-full relative">
           <Link to={`/singleToy/${_id}`} className="text-bg absolute center-div bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Details</Link>
-          <button onClick={() => addToCart(user.uid, _id)} className="text-bg absolute center-div mt-14 bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Add to cart</button>
+          <button onClick={() => addToCart()} className="text-bg absolute center-div mt-14 bg-primary rounded-full  font-medium  text-sm px-5 py-3 ">Add to cart</button>
         </div>
       </div>
 

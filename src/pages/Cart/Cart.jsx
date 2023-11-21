@@ -1,25 +1,26 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import deletePic from '../../assets/svg/delete.svg'
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const {user} = useContext(AuthContext)
   const [cartItems, setCartItems] = useState([])
 
-  useEffect(() => {
-    Promise.all([
-      fetch(`http://localhost:5000/carts/${user.uid}`),
-      fetch('http://localhost:5000/allToys')
-    ])
-      .then(([resCarts, resToys]) => 
-        Promise.all([resCarts.json(), resToys.json()])
-      )
-      .then(([cartIDs, toys]) => {
-        const ids = cartIDs.map(cartID => cartID.itemID)
-        const matchingToys = toys.filter(toy => ids.includes(toy._id))
-        setCartItems(matchingToys)
-      })
-  }, [user.uid])
+  // useEffect(() => {
+  //   Promise.all([
+  //     fetch(`https://candyland-toys-server.vercel.app/carts/${user.uid}`),
+  //     fetch('https://candyland-toys-server.vercel.app/allToys')
+  //   ])
+  //     .then(([resCarts, resToys]) => 
+  //       Promise.all([resCarts.json(), resToys.json()])
+  //     )
+  //     .then(([cartIDs, toys]) => {
+  //       const ids = cartIDs.map(cartID => cartID.itemID)
+  //       const matchingToys = toys.filter(toy => ids.includes(toy._id))
+  //       setCartItems(matchingToys)
+  //     })
+  // }, [user.uid])
 
   return (
     <div className="mx-auto px-2 max-w-screen-xl">
@@ -42,7 +43,7 @@ const Cart = () => {
         </thead>
         <tbody>
           {
-            cartItems.map(cartItem => <TableRow key={cartItem._id} toy={cartItem} />)
+            cartItems.map(cartItem => <TableRow setCartItems={setCartItems} cartItems={cartItems} key={cartItem._id} toy={cartItem} />)
           }
         </tbody>
       </table>
@@ -52,9 +53,35 @@ const Cart = () => {
 
 export default Cart;
 
-const TableRow = ({toy}) => {
+const TableRow = ({toy, cartItems, setCartItems}) => {
+  const {user} = useContext(AuthContext)
   
-  console.log(toy)
+  const deleteItem = (userID, itemID) => {
+    fetch('http://localhost:5000/deleteItem', {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({userID, itemID})
+    })
+      .then(res => res.json())
+      .then(data => {
+        if(data.deletedCount == 1){
+          console.log(cartItems)
+          const filteredItems = cartItems.filter((singleItem) => {
+            console.log(singleItem)
+            return singleItem.itemID !== itemID
+          });
+          console.log(filteredItems)
+          Swal.fire({
+            title: "Good job!",
+            text: "Item added to cart!",
+            icon: "success"
+          });
+        }
+      })
+  }
+
   return (
     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
       <th
@@ -76,7 +103,7 @@ const TableRow = ({toy}) => {
         </div>
       </td>
       <td class="px-6 py-4">
-        <button class="font-medium flex justify-center items-center"><img className="w-5 h-5" src={deletePic} alt="" /></button>
+        <button class="font-medium flex justify-center items-center" onClick={() => deleteItem(user.uid, toy._id)}><img className="w-5 h-5" src={deletePic} alt="" /></button>
       </td>
     </tr>
   );
