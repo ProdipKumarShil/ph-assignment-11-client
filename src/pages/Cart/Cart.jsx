@@ -2,10 +2,14 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import deletePic from '../../assets/svg/delete.svg'
 import Swal from "sweetalert2";
+import useCart from "../../hooks/useCart";
 
 const Cart = () => {
   const {user} = useContext(AuthContext)
-  const [cartItems, setCartItems] = useState([])
+  const [cart] = useCart()
+  console.log(cart)
+
+  
 
   // useEffect(() => {
   //   Promise.all([
@@ -43,7 +47,7 @@ const Cart = () => {
         </thead>
         <tbody>
           {
-            cartItems.map(cartItem => <TableRow setCartItems={setCartItems} cartItems={cartItems} key={cartItem._id} toy={cartItem} />)
+            cart.map(cartItem => <TableRow  key={cartItem._id} toy={cartItem} />)
           }
         </tbody>
       </table>
@@ -53,7 +57,7 @@ const Cart = () => {
 
 export default Cart;
 
-const TableRow = ({toy, cartItems, setCartItems}) => {
+const TableRow = ({toy}) => {
   const {user} = useContext(AuthContext)
   
   const deleteItem = (userID, itemID) => {
@@ -67,12 +71,7 @@ const TableRow = ({toy, cartItems, setCartItems}) => {
       .then(res => res.json())
       .then(data => {
         if(data.deletedCount == 1){
-          console.log(cartItems)
-          const filteredItems = cartItems.filter((singleItem) => {
-            console.log(singleItem)
-            return singleItem.itemID !== itemID
-          });
-          console.log(filteredItems)
+          console.log(data)
           Swal.fire({
             title: "Good job!",
             text: "Item added to cart!",

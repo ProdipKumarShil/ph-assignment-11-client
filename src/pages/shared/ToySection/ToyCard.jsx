@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import UserRating from '../Rating/Rating';
 import { AuthContext } from '../../../provider/AuthProvider';
 import Swal from 'sweetalert2';
+import useCart from '../../../hooks/useCart';
 
 const ToyCard = ({ toy }) => {
   const {user} = useContext(AuthContext)
+  const [,refetch] = useCart()
   const cartItem = {id: toy._id, name: toy.name, rating: toy.rating, img:toy.img, price: toy.price, email: user.email, category: toy.category, quantity: 1}
   // console.log(cartItem)
 
@@ -19,6 +21,7 @@ const ToyCard = ({ toy }) => {
       .then(res => res.json())
       .then(data => {
         if(data.success){
+          refetch()
           Swal.fire({
             title: "Good job!",
             text: "Item added to cart!",

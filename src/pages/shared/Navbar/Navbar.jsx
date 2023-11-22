@@ -7,9 +7,11 @@ import { AuthContext } from '../../../provider/AuthProvider';
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import SearchBar from '../SearchBar/SearchBar';
+import useCart from '../../../hooks/useCart';
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext)
   const [menu, setMenu] = useState(false)
+  const [cart] = useCart()
   const handleLogOut = () => {
     logOut()
       .then(result => console.log('logout success fully'))
@@ -27,8 +29,14 @@ const Navbar = () => {
           </Link>
           <SearchBar />
           <div className="flex mx-auto  items-center">
-            <Link to='/cart' className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link>
-
+            {/* <Link to='/cart' className='text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4'><AiOutlineShoppingCart /></Link> */}
+            <Link to='/cart' type="button" class="text-3xl relative bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4">
+              <AiOutlineShoppingCart />
+              <span class="sr-only">Notifications</span>
+              <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                {cart?.length || 0}
+              </div>
+            </Link>
             {
               user?.photoURL ? <img className='w-16 rounded-full' src={user.photoURL} /> : <Link className={user ? 'text-3xl bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4' : 'hidden'}><CgProfile /></Link>
             }
