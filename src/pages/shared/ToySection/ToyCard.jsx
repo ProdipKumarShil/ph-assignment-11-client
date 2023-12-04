@@ -9,11 +9,11 @@ import useCart from '../../../hooks/useCart';
 const ToyCard = ({ toy }) => {
   const {user} = useContext(AuthContext)
   const [,refetch] = useCart()
-  const cartItem = {id: toy._id, name: toy.name, rating: toy.rating, img:toy.img, price: toy.price, email: user.email, category: toy.category, quantity: 1}
+  const cartItem = {toyId: toy._id, name: toy.name, rating: toy.rating, img:toy.img, price: toy.price, userEmail: user.email, category: toy.category, quantity: 1}
   // console.log(cartItem)
 
   const addToCart = () => {
-    fetch('https://candyland-toys-server.vercel.app/addCart', {
+    fetch('http://localhost:5000/addCart', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(cartItem)
