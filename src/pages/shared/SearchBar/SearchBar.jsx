@@ -26,14 +26,14 @@ const SearchBar = () => {
         <div>
           <label
             htmlFor="default-search"
-            className="mb-2  font-medium text-gray-900 sr-only dark:text-white">
+            className="mb-2  font-medium text-gray-900 sr-only">
             Search
           </label>
           <div className="relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 aria-hidden="true"
-                className="w-6 h-6 text-gray-500 dark:text-gray-400"
+                className="w-6 h-6 text-gray-500 "
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className='px-2'>
 
-      <nav className="bg-white border-gray-200 dark:bg-gray-900">
+      <nav className="bg-white border-gray-200 ">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <Link to='/' className="flex mx-auto mb-4 md:mb-0 items-center">
             <img src={logo} className="h-32 mr-3" alt="Logo" />
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to='/cart' type="button" class="text-3xl relative bg-primary text-bg p-4 rounded-full hover:text-black hover:bg-gray-400 mr-4">
               <AiOutlineShoppingCart />
               <span class="sr-only">Notifications</span>
-              <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+              <div class="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 ">
                 {cart?.length || 0}
               </div>
             </Link>

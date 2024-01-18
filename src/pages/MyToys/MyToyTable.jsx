@@ -67,8 +67,8 @@ const MyToyTable = ({myToy}) => {
   }
   return (
     <>
-      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      <tr className="bg-white border-b   hover:bg-gray-50 ">
+        <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
           {name}
         </th>
         <td className="px-6 py-4">
@@ -81,8 +81,8 @@ const MyToyTable = ({myToy}) => {
           {quantity}
         </td>
         <td className="px-6 py-4 text-left">
-          <button onClick={handleModal} className="font-medium mr-4 text-blue-600 dark:text-blue-500 hover:underline">Edit</button>
-          <button onClick={handleDelete}  className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</button>
+          <button onClick={handleModal} className="font-medium mr-4 text-blue-600  hover:underline">Edit</button>
+          <button onClick={handleDelete}  className="font-medium text-blue-600  hover:underline">Delete</button>
         </td>
       </tr> 
 
@@ -92,17 +92,17 @@ const MyToyTable = ({myToy}) => {
           
           <div className="flex gap-4">
             <div>
-              <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
-              <input name='price' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+              <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 ">Price</label>
+              <input name='price' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 " />
             </div>
             <div>
-              <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Quantity</label>
-              <input name='quantity' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+              <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 ">Quantity</label>
+              <input name='quantity' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 " />
             </div>
           </div>
           <div>
-            <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Details</label>
-            <input name='description' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+            <label htmlFor="small-input" className="block mb-2 text-sm font-medium text-gray-900 ">Details</label>
+            <input name='description' type="text" id="small-input" className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 " />
           </div>
 
           <div className=" flex justify-between mx-4 mt-4">
