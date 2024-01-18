@@ -6,11 +6,11 @@ import CheckoutForm from './CheckoutForm'
 // provide publishable key
 const  stripePromise = loadStripe(import.meta.env.VITE_PK_KEY)
 
-const Payment = () => {
+const Payment = ({price}) => {
   return (
     <div>
       <Elements stripe={stripePromise}>
-        <CheckoutForm />
+        <CheckoutForm price={price} />
       </Elements>
     </div>
   )
